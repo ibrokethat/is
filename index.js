@@ -51,7 +51,7 @@ function neq(a, b) {
 
 function hasOwnKeyOfValue(key, value, object) {
   return hasOwnKey(key, object) && hasKeyOfValue(key, value, object);
-}term
+}
 
 
 function hasKeyOfValue(key, value, object) {
