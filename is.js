@@ -5,7 +5,7 @@
                 var isFunc = partial(typeOf, "function")
                 isFunc(function() {});
 */
-require("ibt-Object");
+require("Object");
 
 
 /**

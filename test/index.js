@@ -1,6 +1,6 @@
 var assert           = require("assert"),
     sinon            = require("sinon"),
-    is               = require("../ibt-is"),
+    is               = require("../is"),
     typeOf           = is.typeOf,
     enforce          = is.enforce,
     eq               = is.eq,

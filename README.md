@@ -1,17 +1,17 @@
-# ibt-is
+# is
 
 type assertions
 
 ## Install
 
-       npm install ibt-is
+       npm install is
 
 
-##  What is ibt-is?
+##  What is is?
 
 
 
-##  Using ibt-is
+##  Using is
 
 
 ## License
