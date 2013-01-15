@@ -18,7 +18,10 @@
     "type": "git",
     "url": "git@github.com:ibrokethat/is"
   },
-  "main": "is",
+  "ibrokethat": {
+    "buildClient": true
+  },
+  "main": "is.js",
   "scripts": {
     "prepublish" : "npm prune",
     "test": "mocha -u bdd"
