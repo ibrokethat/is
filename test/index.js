@@ -104,6 +104,17 @@ describe("test is module: ", function() {
     });
 
 
+    it("should identify a date", function() {
+
+      var isDate = new Date(),
+          notDate = 10;
+
+      assert.equal(true, typeOf("date", isDate));
+      assert.equal(false, typeOf("date", notDate));
+
+    });
+
+
     it("should identify if an object is a prototype of a value", function() {
 
       var isPrototype = {

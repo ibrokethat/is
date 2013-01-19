@@ -9,7 +9,7 @@ require("Object");
 
 
 /**
-  @description  test to see if a value is aspecific type
+  @description  test to see if a value is a specific type
   @param        {object|string} type
   @param        {any} value
   @return       boolean
@@ -19,6 +19,7 @@ function typeOf(type, value) {
   if (type === "null" && eq(value, null)) return true;
   if (typeof value === type) return true;
   if (type === "array") type = Array.prototype;
+  if (type === "date") type = Date.prototype;
   if (type.isPrototypeOf(value)) return true;
 
   return false;
