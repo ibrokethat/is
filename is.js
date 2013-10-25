@@ -1,11 +1,12 @@
 /**
   @description  detection and comparison
   @note         the parameter signature of type then value might seem a little
-                backward; but is done this way to allow easy partial application
+                backward; but is done this way to allow easy partial application as js binds
+                parameters from left to right
                 var isFunc = partial(typeOf, "function")
                 isFunc(function() {});
 */
-require("Object");
+
 
 
 /**
