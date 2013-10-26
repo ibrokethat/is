@@ -36,7 +36,7 @@ function typeOf(type, value) {
 */
 function enforce(type, value) {
 
-  if (!typeOf(type, value)) throw TypeError.spawn(value + " is not of correct type: " + type);
+  if (!typeOf(type, value)) throw new TypeError(value + " is not of correct type: " + type);
 
   return value;
 
