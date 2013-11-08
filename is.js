@@ -17,10 +17,12 @@
 */
 function typeOf(type, value) {
 
-  if (type === "null" && eq(value, null)) return true;
-  if (typeof value === type) return true;
-  if (type === "array") type = Array.prototype;
-  if (type === "date") type = Date.prototype;
+  if (eq(type, "null") && eq(value, null)) return true;
+  if (eq(typeof value, type)) return true;
+  if (eq(type, "array")) type = Array.prototype;
+  if (eq(type, "date")) type = Date.prototype;
+  if (eq(type, "string")) type = String.prototype;
+  if (eq(type, "number")) type = Number.prototype;
   if (type.isPrototypeOf(value)) return true;
 
   return false;
@@ -36,7 +38,7 @@ function typeOf(type, value) {
 */
 function enforce(type, value) {
 
-  if (!typeOf(type, value)) throw TypeError.spawn(value + " is not of correct type: " + type);
+  if (!typeOf(type, value)) throw new Error(value + " is not of correct type: " + type);
 
   return value;
 

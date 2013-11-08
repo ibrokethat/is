@@ -88,6 +88,7 @@ describe("test is module: ", function() {
       var isNumber = 10,
           notNumber = "";
 
+      assert.equal(true, typeOf("number", new Number(10)));
       assert.equal(true, typeOf("number", isNumber));
       assert.equal(false, typeOf("number", notNumber));
 
@@ -98,6 +99,7 @@ describe("test is module: ", function() {
       var isString = "10",
           notString = 10;
 
+      assert.equal(true, typeOf("string", new String('10')));
       assert.equal(true, typeOf("string", isString));
       assert.equal(false, typeOf("string", notString));
 
