@@ -1,6 +1,6 @@
 {
-  "name": "is",
-  "description": "ibrokethat assertions",
+  "name": "super-is",
+  "description": "super assertions",
   "version": "0.0.4",
   "author": "si@ibrokethat.com",
   "contributors": [
@@ -15,9 +15,6 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:ibrokethat/is"
-  },
-  "ibrokethat": {
-    "buildClient": true
   },
   "main": "is.js",
   "scripts": {
