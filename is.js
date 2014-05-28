@@ -24,7 +24,7 @@ function typeOf(type, value) {
   if (eq(type, "string")) type = String.prototype;
   if (eq(type, "number")) type = Number.prototype;
   if (type.isPrototypeOf(value)) return true;
-  if (value instanceof type) return true;
+  if (typeof type === 'function' &&  value instanceof type) return true;
 
   return false;
 

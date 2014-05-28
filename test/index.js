@@ -106,6 +106,16 @@ describe("test is module: ", function() {
     });
 
 
+    it("should identify a instance", function() {
+
+      var isInstance = new Error(),
+          notInstance = 10;
+
+      assert.equal(true, typeOf(Error, isInstance));
+      assert.equal(false, typeOf(Error, notInstance));
+
+    });
+
     it("should identify a date", function() {
 
       var isDate = new Date(),
